@@ -8,5 +8,17 @@
             id="org.eclipsejc.core.JCVMInstallType">
       </vmInstallType>
    </extension>
+   <extension
+         point="org.eclipse.jdt.launching.executionEnvironments">
+      <environment
+            description="JavaCard Classic"
+            id="JavaCard"
+            profileProperties="jcvm.properties">
+      </environment>
+      <analyzer
+            class="org.eclipsejc.core.JCExecutionEnvironmentAnalyzer"
+            id="org.eclipsejc.core.JCanalyzer">
+      </analyzer>
+   </extension>
 
 </plugin>
