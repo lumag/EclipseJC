@@ -40,5 +40,29 @@
             priority="normal">
       </content-type>
    </extension>
+   <extension
+         id="capBuilder"
+         name="Java Card CAP builder"
+         point="org.eclipse.core.resources.builders">
+      <builder
+            hasNature="true">
+         <run
+               class="org.eclipsejc.builder.CapBuilder">
+         </run>
+      </builder>
+   </extension>
+   <extension
+         id="jcNature"
+         name="Java Card Project Nature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="org.eclipsejc.builder.JCNature">
+         </run>
+      </runtime>
+      <builder
+            id="org.eclipsejc.core.capBuilder">
+      </builder>
+   </extension>
 
 </plugin>
