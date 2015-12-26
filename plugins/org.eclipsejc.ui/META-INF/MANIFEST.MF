@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eclipse Java Card UI
+Bundle-SymbolicName: org.eclipsejc.ui
+Bundle-Version: 0.0.1.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.eclipsejc.core;bundle-version="[0.0.0,1.0.0)"
