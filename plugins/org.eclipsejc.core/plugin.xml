@@ -20,5 +20,25 @@
             id="org.eclipsejc.core.JCanalyzer">
       </analyzer>
    </extension>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <content-type
+            file-extensions="cap"
+            id="org.eclipsejc.core.cap"
+            name="Java Card Converted Applet"
+            priority="normal">
+      </content-type>
+      <content-type
+            file-extensions="jca"
+            id="org.eclipsejc.core.jca"
+            name="Java Card Assembly"
+            priority="normal">
+      </content-type>
+      <content-type
+            id="org.eclipsejc.core.exp"
+            name="Java Card Export file"
+            priority="normal">
+      </content-type>
+   </extension>
 
 </plugin>
